@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --main-color:#082032;
+  --box-color : #004A55;
+  --yellow : #F87D09;
+  --text-color:#A7CDCC;
+  --black : #000000;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+  scroll-behavior: smooth;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--main-color);
+  color: var(--text-color);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  
+}
+.box-container{
+  border-radius: 20px;
+  background-color: var(--box-color);
+  padding: 10px 30px 10px 40px;
+  width: 500px;
+  margin: 30px;
+  cursor: default;
+}
+.top{
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+  align-items: center;
+}
+.top > h4 > span{
+  color: var(--yellow);
+  font-size: 17px;
+}
+.top > h3{
+  color: var(--yellow);
+  font-size: 17px;
+  
+}
+.body{
+  margin-top: -18px;
+}
+.body>p{
+  font-weight: 500;
+  margin-bottom: 0;
+  max-height: 130px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.paragraph::-webkit-scrollbar-button{
+  display: none;
+}
+.view-more{
+  margin-top: -10px;
+  color: var(--yellow);
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.view-more::after{
+  content: '';
+  background-color: var(--yellow);
+  height: 1px;
+  width: 75px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.view-less{
+  margin-top: -10px;
+  color: var(--yellow);
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+ul{
+  list-style: none;
+}
+.tags>ul{
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+ul>li{
+  color: var(--black);
+  background-color: var(--yellow);
+  padding: 10px 20px 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 25px;
+  margin-top: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reaction{
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.reaction > h4{
+  font-size: 21px;
+  color: var(--text-color);
+}
+.reaction > h4>span{
+  font-size: 18px;
+  color: var(--text-color);
+  margin-left: 1px;
 }

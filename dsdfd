@@ -1,0 +1,27 @@
+<div className="box-container">
+    <div className="body">
+    <div className="top">
+    <h3>Id : {item.id}</h3> 
+    <h4>follow <span>+</span></h4>
+    </div>
+
+    {view==true ?<div> <p>Lorem ipsum, dolor sit amet consectetur
+    adipisicing elit. Autem dolor maiores quod tenetur vel accusamus
+    ea placeat nam quae ut.Autem dolor maiores quod teneturLorem ipsum, dolor sit amet consectetur
+    adipisicing elit. Autem dolor maiores quod tenetur vel accusamus
+    ea placeat nam quae ut.Autem dolor maiores quod tenetur</p> <h4 className='view-less' onClick={viewless}>view less</h4> </div>:<div><p>Lorem ipsum, dolor sit amet consectetur
+    adipisicing elit. Autem dolor maiores quod tenetur vel accusamus
+    ea placeat nam quae ut.Autem dolor maiores quod tenetur...</p><h4 className='view-more'  onClick={viewmore}>view more</h4></div>}
+    </div>
+    <div className="tags">
+        <ul>
+            <li>mystery</li>
+            <li>english</li>
+            <li>american</li>
+        </ul>
+    </div>
+    <div className="reaction">
+        <h4><i class="uil uil-thumbs-up"></i><span>{item.reactions}</span></h4>
+        <h4><i class="uil uil-eye"></i><span>32</span></h4>
+    </div>
+</div>
